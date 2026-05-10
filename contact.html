@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Юрий Чернышов — контакты</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header>
+      <div class="logo-glass">
+        <div class="logo-mark"></div>
+        <div class="logo-text">
+          <span class="logo-title">Юрий Чернышов</span>
+          <span class="logo-sub">frontend • школьный разработчик</span>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="projects.html">Проекты</a>
+        <a href="contact.html" class="active">Контакты</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-glass">
+        <div class="section-header">
+          <div>
+            <h1 class="section-title">Контакты</h1>
+            <p class="section-sub">
+              Если у вас есть идея сайта или небольшой проект — можете написать мне.
+              Предпочитаю общаться в мессенджерах, отвечаю по возможности быстро.
+            </p>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <h2 class="project-name">Как связаться</h2>
+            <p class="project-type">основной способ</p>
+            <p class="project-desc">
+              Проще всего написать в Telegram. Коротко расскажите, что нужно: лендинг,
+              сайт‑визитка, страница с контактами или что‑то ещё.
+            </p>
+            <div class="project-meta">
+              <span class="pill">Telegram: @windziv</span>
+              <span>предпочитаемый канал</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h2 class="project-name">Что можно обсудить</h2>
+            <p class="project-type">типы задач</p>
+            <p class="project-desc">
+              Сайт для локального бизнеса, личная страница, презентация проекта,
+              базовый лендинг с формой или кнопками для связи. Всё без сложных
+              админ-панелей, но с аккуратным дизайном.
+            </p>
+            <div class="project-meta">
+              <span class="pill">мини‑проекты</span>
+              <span>под ключ</span>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© <span id="year"></span> Юрий Чернышов. Страница контактов.</span>
+      <span>Напишите мне, если нужен аккуратный сайт.</span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

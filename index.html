@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Юрий Чернышов — главная</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header>
+      <div class="logo-glass">
+        <div class="logo-mark"></div>
+        <div class="logo-text">
+          <span class="logo-title">Юрий Чернышов</span>
+          <span class="logo-sub">frontend • школьный разработчик</span>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html" class="active">Главная</a>
+        <a href="projects.html">Проекты</a>
+        <a href="contact.html">Контакты</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-glass">
+        <div class="hero-chips">
+          <span class="chip accent">Юрий Чернышов</span>
+          <span class="chip">15 лет · Россия</span>
+          <span class="chip">HTML · CSS · немного JS</span>
+          <span class="chip">жидкое стекло · плавные эффекты</span>
+        </div>
+
+        <h1 class="hero-title">
+          Я <span>Юрий Чернышов</span> — делаю аккуратные сайты с эффектом жидкого стекла.
+        </h1>
+        <p class="hero-subtitle">
+          Собираю лендинги и сайты‑визитки для небольших компаний и личных проектов.
+          Мне нравится, когда сайт ощущается живым: с мягкими переходами, стеклянными панелями
+          и понятной структурой.
+        </p>
+
+        <div class="hero-meta">
+          <span>
+            <span class="status-dot"></span>
+            Открыт для небольших заказов и пет‑проектов
+          </span>
+          <span>Стек: HTML, CSS, GitHub Pages, немного JavaScript</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="projects.html" class="btn btn-primary">
+            <span class="btn-icon">🚀</span>
+            <span>Смотреть мои проекты</span>
+          </a>
+          <a href="contact.html" class="btn btn-ghost">
+            <span class="btn-icon">💬</span>
+            <span>Связаться со мной</span>
+          </a>
+        </div>
+
+        <p class="hero-footnote">
+          Этот сайт можно привязать к любому домену и использовать как портфолио разработчика.
+        </p>
+      </section>
+
+      <aside class="side-column">
+        <div class="card-glass">
+          <div class="card-header">
+            <h2 class="card-title">Навыки</h2>
+            <span class="card-tag">развиваются</span>
+          </div>
+          <div class="card-body">
+            <p class="muted">Делаю простые, но аккуратные статические сайты.</p>
+            <ul class="list-plain">
+              <li>адаптивная верстка</li>
+              <li>структурный HTML</li>
+              <li>чистый CSS</li>
+              <li>плавные эффекты</li>
+              <li>GitHub Pages</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card-glass">
+          <div class="card-header">
+            <h2 class="card-title">Обо мне</h2>
+            <span class="card-tag">кратко</span>
+          </div>
+          <div class="card-body">
+            <p class="muted">
+              Я школьник, который любит программирование, игры и красивые интерфейсы.
+              Учусь на реальных задачах: делаю сайты для себя и знакомых, постепенно
+              двигаясь к коммерческим проектам.
+            </p>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <section class="section-glass">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Чем могу быть полезен</h2>
+          <p class="section-sub">
+            Подхожу для небольших задач: сайт‑визитка, простой лендинг, страница с контактами
+            или презентация проекта. Без сложных админок, но с акцентом на аккуратный внешний вид.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>© <span id="year"></span> Юрий Чернышов. Главная страница портфолио.</span>
+      <span>Переходите в раздел «Проекты», чтобы увидеть работы.</span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

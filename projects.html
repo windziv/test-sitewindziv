@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Юрий Чернышов — проекты</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header>
+      <div class="logo-glass">
+        <div class="logo-mark"></div>
+        <div class="logo-text">
+          <span class="logo-title">Юрий Чернышов</span>
+          <span class="logo-sub">frontend • школьный разработчик</span>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="projects.html" class="active">Проекты</a>
+        <a href="contact.html">Контакты</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-glass">
+        <div class="section-header">
+          <div>
+            <h1 class="section-title">Мои проекты</h1>
+            <p class="section-sub">
+              Здесь собраны учебные и реальные работы, на которых я тренирую верстку
+              и эффекты жидкого стекла. Со временем сюда будут добавляться новые сайты.
+            </p>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <h2 class="project-name">Личный сайт Юрия Чернышова</h2>
+            <p class="project-type">портфолио · стеклянный UI</p>
+            <p class="project-desc">
+              Одностраничный сайт‑портфолио, который я использую как визитку разработчика.
+              Эффект стекла, мягкие тени и аккуратная типографика. Развернут на GitHub Pages.
+            </p>
+            <div class="project-meta">
+              <span class="pill">HTML · CSS</span>
+              <span>портфолио</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h2 class="project-name">Шаблон сайта‑визитки</h2>
+            <p class="project-type">для небольшого бизнеса</p>
+            <p class="project-desc">
+              Готовый шаблон под мастерские, салоны и сервисы. Блоки «о компании», услуги,
+              цены и контакты. Можно быстро адаптировать под конкретную организацию из 2ГИС.
+            </p>
+            <div class="project-meta">
+              <span class="pill">лендинги</span>
+              <span>готов к кастому</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h2 class="project-name">Учебные мини‑проекты</h2>
+            <p class="project-type">эксперименты</p>
+            <p class="project-desc">
+              Небольшие страницы с анимациями, hover‑эффектами и разными видами фона.
+              Использую их, чтобы пробовать идеи перед тем, как внедрять в реальные сайты.
+            </p>
+            <div class="project-meta">
+              <span class="pill">pet‑projects</span>
+              <span>в процессе</span>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© <span id="year"></span> Юрий Чернышов. Страница проектов.</span>
+      <span>Можно перейти в «Контакты», если хотите обсудить сайт.</span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
